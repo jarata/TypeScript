@@ -81,3 +81,5 @@ var Animal = /** @class */ (function () {
 var lion = new Animal("RAAAWR");
 console.log(lion.sing);
 console.log(lion.greet());
+// union
+var confused = 'hello';

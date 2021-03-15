@@ -111,3 +111,6 @@ class Animal {
 let lion = new Animal("RAAAWR");
 console.log(lion.sing);
 console.log(lion.greet());
+
+// union
+let confused: string | number = 'hello'
