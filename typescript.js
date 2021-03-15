@@ -57,3 +57,27 @@ var fightRobotArmy = function (robots) {
 var fightRobotArmy2 = function (robots) {
     console.log("Fight2");
 };
+var dog = {};
+dog.count;
+// function
+var fightRobotArmy3 = function (robots) {
+    console.log("Fight!!!");
+};
+var fightRobotArmy4 = function (robots) {
+    console.log("Fight!!!");
+    return 5;
+};
+// class
+var Animal = /** @class */ (function () {
+    function Animal(sound) {
+        this.sing = 'lalalala';
+        this.sing = sound;
+    }
+    Animal.prototype.greet = function () {
+        return "Hello " + this.sing;
+    };
+    return Animal;
+}());
+var lion = new Animal("RAAAWR");
+console.log(lion.sing);
+console.log(lion.greet());

@@ -66,7 +66,7 @@ let error = () :never => {
 interface RobotArmy {
     count: number,
     type: string,
-    magic: string
+    magic?: string
 }
 
 let fightRobotArmy = (robots: RobotArmy) => {
@@ -76,3 +76,38 @@ let fightRobotArmy = (robots: RobotArmy) => {
 let fightRobotArmy2 = (robots: { count: number, type: string, magic: string}) => {
     console.log("Fight2")
 }
+
+// type assertion
+interface CatArmy {
+    count: number,
+    type: string,
+    color: string
+}
+
+let dog = {} as CatArmy
+dog.count
+
+// function
+let fightRobotArmy3 = (robots: RobotArmy): void => {
+    console.log("Fight!!!")
+}
+
+let fightRobotArmy4 = (robots: { count: number, type: string, magic: string}): number => {
+    console.log("Fight!!!")
+    return 5;
+}
+
+// class
+class Animal {
+    sing: string = 'lalalala';
+    constructor(sound: string) {
+        this.sing = sound;
+    }
+    greet() {
+        return `Hello ${this.sing}`
+    }
+}
+
+let lion = new Animal("RAAAWR");
+console.log(lion.sing);
+console.log(lion.greet());
