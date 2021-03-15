@@ -51,3 +51,9 @@ var sing = function () {
 var error = function () {
     throw Error('help!');
 };
+var fightRobotArmy = function (robots) {
+    console.log("Fight");
+};
+var fightRobotArmy2 = function (robots) {
+    console.log("Fight2");
+};
