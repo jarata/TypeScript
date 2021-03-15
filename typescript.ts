@@ -39,3 +39,11 @@ let wizard: object = {
 // null or undefined
 let meh: undefined = undefined
 let no: null = null;
+
+// tuple
+let basket: [string, number];
+basket = ["hello", 5]
+
+// enum
+enum Size { small = 1, medium = 2, large = 3}
+let sizeName: string = Size[2]

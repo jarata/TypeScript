@@ -29,3 +29,14 @@ var wizard = {
 // null or undefined
 var meh = undefined;
 var no = null;
+// tuple
+var basket;
+basket = ["hello", 5];
+// enum
+var Size;
+(function (Size) {
+    Size[Size["small"] = 1] = "small";
+    Size[Size["medium"] = 2] = "medium";
+    Size[Size["large"] = 3] = "large";
+})(Size || (Size = {}));
+var sizeName = Size[2];
