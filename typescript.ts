@@ -47,3 +47,17 @@ basket = ["hello", 5]
 // enum
 enum Size { small = 1, medium = 2, large = 3}
 let sizeName: string = Size[2]
+
+// any
+let whatever: any = "blahh blahh";
+whatever = true;
+
+// void
+let sing = (): void => {
+    console.log("la la la")
+}
+
+// never
+let error = () :never => {
+    throw Error('help!')
+}

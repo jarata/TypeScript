@@ -40,3 +40,14 @@ var Size;
     Size[Size["large"] = 3] = "large";
 })(Size || (Size = {}));
 var sizeName = Size[2];
+// any
+var whatever = "blahh blahh";
+whatever = true;
+// void
+var sing = function () {
+    console.log("la la la");
+};
+// never
+var error = function () {
+    throw Error('help!');
+};
